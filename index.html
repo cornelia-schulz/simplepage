@@ -7,28 +7,31 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <div class="container">
         <header class="row">
-            <div id="left" class="links col-md-5 header navbar-nav navbar">
-                <ul class="nav nav-pills">
-                    <li role="presentation"><a href="#">Link</a></li>
-                    <li role="presentation"><a href="#">Link</a></li>
-                    <li role="presentation"><a href="#">Link</a></li>
-                </ul>
-            </div>
-            <div id="center" class="col-md-2 header">
-                <img class="logo" src="images/logo-logo1.jpg" alt="logo">
-            </div>
-            <div id="right" class="links col-md-5 header">
-                <ul class="nav nav-pills">
-                    <li role="presentation"><a href="#">Link</a></li>
-                    <li role="presentation"><a href="#articles">News</a></li>
-                    <li role="presentation"><a href="#footer">Contact</a></li>
-                </ul>
-            </div>
+            <nav id="left" class="links col-md-12 header navbar-nav navbar" role="navigation">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="logo" src="images/logo-logo1.jpg" alt="logo"></a>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavbarLeft">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="NavbarLeft">
+                        <ul class="nav nav-pills">
+                            <li role="presentation"><a href="#main">About</a></li>
+                            <li role="presentation"><a href="#articles">News</a></li>
+                            <li role="presentation"><a href="#footer">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
         <main>
             <div id="top-carousel" class="carousel slide" data-ride="carousel">
@@ -153,7 +156,7 @@
                         <a class="email" href="mailto:firzhug@gmail.com">our-email@outlook.com</a>
                     </address>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 center">
                     <address>
                         30 Long Street
                         <br />
@@ -164,7 +167,7 @@
                         <a href="https://www.google.com/maps/dir//Auckland,+New+Zealand/@-36.8484545,174.7282262,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x6d0d47fb5a9ce6fb:0x500ef6143a29917!2m2!1d174.7633315!2d-36.8484597" class="visible-xs visible-sm">Get Directions</a>
                     </address>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 right">
                     <a href="www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter Logo"></a>
                     <a href="www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Twitter Logo"></a>
                     <a href="www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="Twitter Logo"></a>
@@ -178,12 +181,13 @@
 							</a></small></div><div><small><a href="http://googlemapsgenerator.com">googlemapsgenerator.com</a></small></div></iframe>
                 </div>
             </div>
-            <div class="footer row">
-                <p>Copyright Cornelia Schulz 2016</p>
+            <div class="footer row footer-bottom">
+                <p>&copy; Copyright Cornelia Schulz 2016</p>
             </div>
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 </html>
