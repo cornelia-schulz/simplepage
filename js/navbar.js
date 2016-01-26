@@ -21,8 +21,13 @@ $(document).ready(function(){
 });
 
 function checkSize(){
+    console.log('checking size');
     if($('.right').css('text-align') == 'right')
     {
         $('#left').addClass('navbar-fixed-top');
+    }
+    else
+    {
+        $('#left').removeClass('navbar-fixed-top');
     }
 }
